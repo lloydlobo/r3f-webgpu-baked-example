@@ -15,12 +15,14 @@ function joinURL(...parts) {
         .join("/")
 }
 
-const baseURL = import.meta.env.BASE_URL || "/"
+// const baseURL = import.meta.env.BASE_URL || "/"
 
 const AssetPath = {
     Gltf: {
-        LivingRoom: joinURL(baseURL, "models", "Living-room.glb"),
-        LivingRoomBaked: joinURL(baseURL, "models", "Living-room_baked.glb"),
+        // LivingRoom: joinURL(baseURL, "models", "Living-room.glb"),
+        // LivingRoomBaked: joinURL(baseURL, "models", "Living-room_baked.glb"),
+        LivingRoom: joinURL( "models", "Living-room.glb"),
+        LivingRoomBaked: joinURL( "models", "Living-room_baked.glb"),
     },
 }
 
